@@ -1,0 +1,28 @@
+body {
+    font-family: 'Muli', -apple-system, sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    box-sizing: border-box;/* will modify the box modal and move padding and border inside of content box making the width you set is the width you get */
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #e53371;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  /* set height to pixels if you want angle to change with screen width */
+}
