@@ -22,11 +22,6 @@ header {
     display: flex;
 }
 
-.container div {
-    border: 1px #white solid;
-    padding: 10px;
-}
-
 h1 {
     font-family: 'Anton',Impact, -apple-system,sans-serif;
     font-size: 3.125em;
@@ -42,8 +37,6 @@ h1 {
     height: 25%;
     width: 25%;
     padding-right: 5%;
-
-
 }
 
 p {
@@ -51,7 +44,6 @@ p {
     font-size: 1.5em;
     margin: 0;
     padding-right: 5%;
-
 }
 
 a {
@@ -64,17 +56,13 @@ a:hover {
     cursor: pointer;
     color: white;
 }
+.icons:hover{
+    color: #D3D3D3;
+}
 
-
-svg {
+.svg {
   position: absolute;
   bottom: 0;
   width: 95%;
   height: 10vh;
-  /* set height to pixels if you want angle to change with screen width */
-}
-
-.container-2 {
-    display: flex;
-    align-items: center;
 }
