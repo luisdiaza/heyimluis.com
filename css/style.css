@@ -1,9 +1,10 @@
 body {
-    font-family: 'Muli', -apple-system, sans-serif;
+    font-family: 'Muli',-apple-system, sans-serif;
     font-weight: 400;
     font-size: 100%;
     box-sizing: border-box;/* will modify the box modal and move padding and border inside of content box making the width you set is the width you get */
     margin: 0;
+    /* padding: 5%; */
 }
 
 html {
@@ -14,15 +15,66 @@ header {
     position: relative;
     height: 100vh;
     background-color: #e53371;
+
 }
+.container {
+    padding: 5% 0 0 5%;
+    display: flex;
+}
+
+.container div {
+    border: 1px #white solid;
+    padding: 10px;
+}
+
 h1 {
-    text-align: center;
+    font-family: 'Anton',Impact, -apple-system,sans-serif;
+    font-size: 3.125em;
+    font-weight: 400;
     margin: 0;
+    padding: 5% 0 0 5%;
+    letter-spacing: 1px;
+    color: #2d1a9a;
+
 }
+
+.me {
+    height: 25%;
+    width: 25%;
+    padding-right: 5%;
+
+
+}
+
+p {
+    color: #2d1a9a;
+    font-size: 1.5em;
+    margin: 0;
+    padding-right: 5%;
+
+}
+
+a {
+     text-decoration: none;
+     font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+
 svg {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 95%;
   height: 10vh;
   /* set height to pixels if you want angle to change with screen width */
+}
+
+.container-2 {
+    display: flex;
+    align-items: center;
 }
