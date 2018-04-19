@@ -144,10 +144,11 @@ a {
 }
 .flex-container {
     display: flex;
+    justify-content: center;
     /* margin: auto; */
 }
 .flex-container p{
-    margin: 0;
+
 }
 .box-1{
   flex:1;
@@ -184,9 +185,9 @@ a {
         float: none;
         height:50%;
         width: 50%;
-        margin-top: 10%;
+        /* margin-top: 10%;
         margin-right:25%;
-        margin-left: 25%;
+        margin-left: 25%; */
     }
     .projects-h1 {
         text-align: center;
@@ -194,6 +195,7 @@ a {
     .flex-container{
         display: block;
     }
+
 
 
 }
