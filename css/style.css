@@ -52,27 +52,22 @@ ul {
 header li {
     float: left;
     display: inline;
-    /* vertical-align: middle; */
     cursor: pointer;
-    /* padding: 0 4% 0 3%; */
+
 }
 
+/* Following three lines modify font awesome icons */
 .svg-inline--fa.fa-w-12 {
+    width: 1.2em;
+}
+
+.svg-inline--fa.fa-w-14 {
     width: 1.2em;
 }
 
 .svg-inline--fa.fa-w-16{
     width: 1.5em;
 }
-
-.svg-inline--fa.fa-w-14 {
-    width: 1.2em;
-}
-/* .fa-5x{
-    vertical-align: middle;
-} */
-
-
 
 .icons:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
@@ -99,9 +94,9 @@ header li {
   }
 }
 /* About Me Section */
-
 .about {
-    margin-top: 5%;
+    /* margin-left: 15.25%;
+    margin-right: 15.25%; */
 }
 
 .trapezoid {
@@ -112,16 +107,16 @@ header li {
     height:25%;
     width: 25%;
     float: left;
-    padding-right: 5%;
+    margin-right: 5%;
+    /* padding-right: 5%; */
 }
 
 p {
     color: #2d1a9a;
     font-size: 2.2em;
     font-weight: 400;
-    /* float: right: */
-     margin: 0;
-    /* padding-right: 15%; */
+     /* margin: 0; */
+    /* padding-right: 5%; */
 
 }
 
@@ -133,7 +128,6 @@ a {
      text-decoration: none;
      font-weight: 900;
      /* font-size: 1.1em; */
-     text-align: justify;
 }
 
 .highlight:hover {
@@ -142,24 +136,43 @@ a {
 
 }
 
-.projects{
-    color: blue;
-    margin-top: 10%;
-}
 .svg {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 80vh;
+  width: 82%;
+  height:10vh;
 }
-.splonic
-{
+.flex-container {
+    display: flex;
+    margin: auto;
+}
+.flex-container p{
+    margin: 0;
+}
+.box-1{
+  flex:1;
+  order:1;
+}
+
+.box-2{
+  flex:1;
+  order:2;
+}
+
+.box-3{
+  flex:1;
+  order: 3;
+}
+
+.pics {
     width: 25%;
     height: 25%;
 }
+
 @media only screen and (max-width : 992px) { /*  applies to those viewing with a browser width below 992px*/
-    h1 {
-        display: block;
+    h1, p {
+        /* display: block; */
+        text-align: center;
     }
     header {
         margin: 0;
@@ -167,5 +180,20 @@ a {
     header nav {
         float:left;
     }
+    .luis{
+        float: none;
+        height:50%;
+        width: 50%;
+        margin-top: 10%;
+        margin-right:25%;
+        margin-left: 25%;
+    }
+    .projects-h1 {
+        text-align: center;
+    }
+    .flex-container{
+        display: block;
+    }
+
 
 }
