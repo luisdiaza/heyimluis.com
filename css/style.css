@@ -1,61 +1,79 @@
 body {
     font-family: 'Muli',-apple-system, sans-serif;
-    font-weight: 400;
-    font-size: 100%;
-    box-sizing: border-box;/* will modify the box modal and move padding and border inside of content box making the width you set is the width you get */
+    font-size: 100%; /* Allows all browsers to resize text*/
+    box-sizing: border-box; /* moves padding and border from box model inside of content making ther width you set, what you get */
+    padding: 0;
     margin: 0;
-    /* padding: 5%; */
+    width: 100%;
+    background-color: #e53371;
 }
 
 html {
     height: 100%;
 }
 
-header {
-    position: relative;
-    height: 100vh;
-    background-color: #e53371;
+/* Global */
 
-}
 .container {
-    padding: 5% 0 0 5%;
-    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;/*horizontally centers element within its container*/
 }
-
-h1 {
+/* Header */
+h1{
+    display: inline-block; /* An inline element does not start on a new line and only takes up as much width as necessary. */
+     vertical-align: middle;
     font-family: 'Anton',Impact, -apple-system,sans-serif;
     font-size: 3.125em;
     font-weight: 400;
     margin: 0;
-    padding: 5% 0 0 5%;
+    /* padding: 5% 5% 0 15%; */
     letter-spacing: 1px;
     color: #2d1a9a;
+}
+header{
+    border-bottom: white 3px solid;
+    margin-top: 5%;
 
 }
 
-.me {
-    height: 25%;
-    width: 25%;
-    padding-right: 5%;
+header nav {
+    float: right;
+    /* padding-bottom: 20%; */
+    /* padding-bottom: 100%; */
+    /* border-bottom: white 3px solid; */
 }
 
-p {
-    color: #2d1a9a;
-    font-size: 1.5em;
+ul {
     margin: 0;
-    padding-right: 5%;
+    padding: 0;
 }
 
-a {
-     text-decoration: none;
-     font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
+header li {
+    float: left;
+    display: inline;
+    /* vertical-align: middle; */
     cursor: pointer;
-    color: white;
+    /* padding: 0 4% 0 3%; */
 }
+
+.svg-inline--fa.fa-w-12 {
+    width: 1.2em;
+}
+
+.svg-inline--fa.fa-w-16{
+    width: 1.5em;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 1.2em;
+}
+/* .fa-5x{
+    vertical-align: middle;
+} */
+
+
+
 .icons:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -80,10 +98,74 @@ a:hover {
     transform: translate3d(4px, 0, 0);
   }
 }
+/* About Me Section */
 
+.about {
+    margin-top: 5%;
+}
+
+.trapezoid {
+    position: relative;
+    height: 50vh;
+}
+.luis {
+    height:25%;
+    width: 25%;
+    float: left;
+    padding-right: 5%;
+}
+
+p {
+    color: #2d1a9a;
+    font-size: 2.2em;
+    font-weight: 400;
+    /* float: right: */
+     margin: 0;
+    /* padding-right: 15%; */
+
+}
+
+.highlight {
+    color: white;
+}
+
+a {
+     text-decoration: none;
+     font-weight: 900;
+     /* font-size: 1.1em; */
+     text-align: justify;
+}
+
+.highlight:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.projects{
+    color: blue;
+    margin-top: 10%;
+}
 .svg {
   position: absolute;
   bottom: 0;
-  width: 95%;
-  height: 10vh;
+  width: 100%;
+  height: 80vh;
+}
+.splonic
+{
+    width: 25%;
+    height: 25%;
+}
+@media only screen and (max-width : 992px) { /*  applies to those viewing with a browser width below 992px*/
+    h1 {
+        display: block;
+    }
+    header {
+        margin: 0;
+    }
+    header nav {
+        float:left;
+    }
+
 }
