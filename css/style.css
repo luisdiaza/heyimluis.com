@@ -11,22 +11,13 @@ body {
 html {
     height: 100%;/* dimensions of the html to cover the entire height of the browser */
 }
-
-/* Global */
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;/*horizontally centers element within its container*/
-}
 /* Header */
 h1{
-    display: inline-block; /* An inline element does not start on a new line and only takes up as much width as necessary. */
-     vertical-align: middle;
+    /* display: inline-block; /* An inline element does not start on a new line and only takes up as much width as necessary. */
     font-family: 'Anton',Impact, -apple-system,sans-serif;
     font-size: 3.125em;
     font-weight: 400;
-    margin: 0;
+    margin: 0 0 0 5%;
     /* padding: 5% 5% 0 15%; */
     letter-spacing: 1px;
     color: #2d1a9a;
@@ -34,28 +25,7 @@ h1{
 header{
     border-bottom: white 3px solid;
     margin-top: 5%;
-
 }
-
-header nav {
-    float: right;
-    /* padding-bottom: 20%; */
-    /* padding-bottom: 100%; */
-    /* border-bottom: white 3px solid; */
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-header li {
-    float: left;
-    display: inline;
-    cursor: pointer;
-
-}
-
 /* Following three lines modify font awesome icons */
 .svg-inline--fa.fa-w-12 {
     width: 1.2em;
@@ -95,10 +65,10 @@ header li {
 }
 /* About Me Section */
 
-.trapezoid {
+/* .trapezoid {
     position: relative;
     height: 50vh;
-}
+} */
 .luis {
     height: 50%;
     width: 50%;
@@ -138,6 +108,11 @@ a {
 
 /* Flex Box */
 
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .about-container
 {
     display: flex;
@@ -150,7 +125,15 @@ a {
     justify-content: center;
     /* margin: auto; */
 }
+.box-1 {
+    flex: 1;
+    order: 1;
+}
 
+.box-2{
+    flex: 1;
+    order: 2;
+}
 .box-3 {
     flex:1;
     order:1;
@@ -181,28 +164,24 @@ a {
 }
 
 @media only screen and (max-width : 992px) { /*  applies to those viewing with a browser width below 992px*/
-    h1, p {
-        /* display: block; */
-        text-align: center;
+    h1{
+        font-size: 2em;
     }
 
-    .SE {
-        margin-left: 5%;
-    }
-
-    header {
-        margin: 0;
-    }
-    header nav {
-        float:left;
-        margin-left: 12%;
-    }
-    /* header h1 {
-        font-size:24em;
-    } */
     .luis{
          height:75%;
         width: 75%;
+    }
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .box-1{
+        /* flex:3; */
+    }
+    .box-5, .box-6, .box-7{
+        margin-left: 12%;
     }
 
     .about-container{
@@ -215,20 +194,15 @@ a {
     }
 
     .projects-container{
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
+        /* justify-content: center; */
         flex-direction: column;
     }
 
-    .svg-inline--fa.fa-w-12 {
-        width: 1em;
+    p{
+        font-size: 1.5em;
     }
-
-    .svg-inline--fa.fa-w-14 {
-        width: 1em;
-    }
-
-    .svg-inline--fa.fa-w-16{
-        width: 1em;
+    .about-me{
+        margin-left: 2.5%;
     }
 }
