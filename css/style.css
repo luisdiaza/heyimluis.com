@@ -18,12 +18,10 @@ h1{
     font-size: 3.125em;
     font-weight: 400;
     margin: 0 0 0 5%;
-    /* padding: 5% 5% 0 15%; */
     letter-spacing: 1px;
     color: #2d1a9a;
 }
 header{
-    border-bottom: white 3px solid;
     margin-top: 5%;
 }
 /* Following three lines modify font awesome icons */
@@ -78,9 +76,6 @@ p {
     color: #2d1a9a;
     font-size: 2.2em;
     font-weight: 400;
-     /* margin: 0; */
-    /* padding-right: 5%; */
-
 }
 
 .highlight {
@@ -90,7 +85,6 @@ p {
 a {
      text-decoration: none;
      font-weight: 900;
-     /* font-size: 1.1em; */
 }
 
 .highlight:hover {
@@ -123,7 +117,6 @@ a {
 .projects-container {
     display: flex;
     justify-content: center;
-    /* margin: auto; */
 }
 .box-1 {
     flex: 1;
@@ -169,8 +162,9 @@ a {
     }
 
     .luis{
-         height:75%;
-        width: 75%;
+        height:50%;
+        width: 50%;
+        margin-top: 5%;
     }
     .header-container {
         display: flex;
@@ -194,8 +188,6 @@ a {
     }
 
     .projects-container{
-        /* display: flex; */
-        /* justify-content: center; */
         flex-direction: column;
     }
 
