@@ -160,6 +160,10 @@ a {
     h1{
         font-size: 2em;
     }
+    p {
+        text-align: center;
+        font-size: 1.5em;
+    }
 
     .luis{
         height:50%;
@@ -174,25 +178,18 @@ a {
     .box-1{
         /* flex:3; */
     }
-    .box-5, .box-6, .box-7{
-        margin-left: 12%;
+    .pics {
+        margin-left: 13.5%;
     }
 
     .about-container{
         display: flex;
         flex-direction: column;
     }
-
-    .projects-h1 {
-        text-align: center;
-    }
-
     .projects-container{
         flex-direction: column;
-    }
-
-    p{
-        font-size: 1.5em;
+        justify-content: space-around;
+        height: 100%;
     }
     .about-me{
         margin-left: 2.5%;
