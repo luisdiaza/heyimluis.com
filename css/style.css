@@ -80,6 +80,7 @@ p {
 
 .highlight {
     color: white;
+    text-align: center;
 }
 
 a {
@@ -112,11 +113,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .projects-container {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
 }
 .box-1 {
     flex: 1;
@@ -136,17 +139,21 @@ a {
     order:2;
 }
 
-.box-5{
+#box-5{
   flex:1;
   order:1;
 }
 
-.box-6{
+#box-6{
   flex:1;
   order:2;
 }
 
-.box-7{
+.boxes{
+    text-align: center;
+}
+
+#box-7{
   flex:1;
   order: 3;
 }
@@ -162,7 +169,7 @@ a {
     }
     p {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .luis{
@@ -179,19 +186,28 @@ a {
         /* flex:3; */
     }
     .pics {
-        margin-left: 13.5%;
+        /* margin-left: 13.5%; */
     }
 
     .about-container{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .projects-container{
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
         height: 100%;
     }
     .about-me{
-        margin-left: 2.5%;
+        /* text-align: center; */
+    }
+}
+@media only screen and (min-width : 2560px){
+    .luis{
+        height: 25%;
+        width: 25%;
+        margin-top: 5%;
     }
 }
